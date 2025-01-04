@@ -666,6 +666,38 @@
                 margin-bottom: 15px;
             }
         }
+        .game-controls {
+    position: relative;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.bar1 {
+    display: inline-block;
+    position: relative;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Show light theme by default */
+.label.dark {
+    display: none;
+}
+
+/* For dark theme */
+.dark-theme .label.light {
+    display: none;
+}
+
+.dark-theme .label.dark {
+    display: flex;
+}
+
+
     </style>
     <!-- Google tag (gtag.js) -->
 <script async="" src="gtag/js?id=G-8JV3QJT7DE"></script>
@@ -742,18 +774,23 @@
                         <div class="label dark"><a href="index.htm"><img src="mario-game/assets/img/fullscreen_dark.png" width="16" alt=""> Back</a></div>
                     </div>
 
-                    <div id="sound-toggle" class="bar1">
-                        <button id="sound-toggle" style="cursor: pointer;">SOUND ON</button>
-                        <div class="label light"><img src="mario-game/assets/img/sound_on_icon.png" width="16" alt=""> Sound On</div>
-                        <div class="label dark"><img src="mario-game/assets/img/sound_on_icon_dark.png" width="16" alt=""> Sound On</div>
-                    </div>
+                    <div class="game-controls">
+    <div id="sound-toggle" class="bar1">
+        <button style="cursor: pointer;">SOUND ON</button>
+        <div class="label light"><img src="mario-game/assets/img/sound_on_icon.png" width="16" alt=""> Sound On</div>
+        <div class="label dark"><img src="mario-game/assets/img/sound_on_icon_dark.png" width="16" alt=""> Sound On</div>
+    </div>
 
-                    <div id="on-button" style="display: none">
-                        <div class="label light"><img src="mario-game/assets/img/sound_on_icon.png" width="16" alt=""> Sound On</div>
-                        <div class="label dark"><img src="mario-game/assets/img/sound_on_icon_dark.png" width="16" alt=""> Sound On</div>
-                        <div id="off-button" style="display: none"> <div class="label light"><img src="mario-game/assets/img/sound_off_icon.png" width="16" alt=""> Sound On</div>
-                            <div class="label dark"><img src="mario-game/assets/img/sound_off_icon_dark.png" width="16" alt=""> Sound On</div>
-                        </div>
+    <div id="on-button" style="display: none">
+        <div class="label light"><img src="mario-game/assets/img/sound_on_icon.png" width="16" alt=""> Sound On</div>
+        <div class="label dark"><img src="mario-game/assets/img/sound_on_icon_dark.png" width="16" alt=""> Sound On</div>
+    </div>
+    
+    <div id="off-button" style="display: none">
+        <div class="label light"><img src="mario-game/assets/img/sound_off_icon.png" width="16" alt=""> Sound Off</div>
+        <div class="label dark"><img src="mario-game/assets/img/sound_off_icon_dark.png" width="16" alt=""> Sound Off</div>
+    </div>
+</div>
 
                     <div id="out_keymapping" class="bar1" style="display: none;">
                         <div class="label">- Keys Mapping -</div>
