@@ -1,0 +1,1008 @@
+﻿
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="../../static/images/favicon.ico">
+    <meta charset="utf-8">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+
+                <link rel="alternate" href="../../de/history/" hreflang="de">
+                    <link rel="alternate" href="../../el/history." hreflang="el">
+                        <link rel="alternate" href="/history/" hreflang="en">
+                    <link rel="alternate" href="/es/history/" hreflang="es">
+                    <link rel="alternate" href="../../fr/history/" hreflang="fr">
+                    <link rel="alternate" href="../../it/history/" hreflang="it">
+                    <link rel="alternate" href="../../nl/history/" hreflang="nl">
+                    <link rel="alternate" href="../../pl/history/" hreflang="pl">
+                    <link rel="alternate" href="../../pt/history/" hreflang="pt">
+                    <link rel="alternate" href="../../ru/history/" hreflang="ru">
+                    <link rel="alternate" href="../../tr/history/" hreflang="tr">
+                    <link rel="alternate" href="../../vi/history/" hreflang="vi">
+        
+<script data-ad-client="ca-pub-5363384967385648" async="" src="pagead/js/f.txt"></script>
+
+    <link rel="stylesheet" type="text/css" href="../../static/css/flag-icon.min.css">
+    <link rel="stylesheet" href="../../bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="../../jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="../../ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="../../bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>
+        var is_mobile = false;
+        var is_fullscreen = false;
+        var is_dev = false;
+    </script>
+
+    <style>
+        :root, [data-bs-theme=light] {
+            --bs-backdrop-bg: #000;
+            --bs-blue: #0d6efd;
+            --bs-indigo: #6610f2;
+            --bs-purple: #6f42c1;
+            --bs-pink: #d63384;
+            --bs-red: #dc3545;
+            --bs-orange: #fd7e14;
+            --bs-yellow: #ffc107;
+            --bs-green: #198754;
+            --bs-teal: #20c997;
+            --bs-cyan: #0dcaf0;
+            --bs-black: #000;
+            --bs-white: #fff;
+            --bs-gray: #6c757d;
+            --bs-gray-dark: #343a40;
+            --bs-gray-100: #f8f9fa;
+            --bs-gray-200: #e9ecef;
+            --bs-gray-300: #dee2e6;
+            --bs-gray-400: #ced4da;
+            --bs-gray-500: #adb5bd;
+            --bs-gray-600: #6c757d;
+            --bs-gray-700: #495057;
+            --bs-gray-800: #343a40;
+            --bs-gray-900: #212529;
+            --bs-primary: #0d6efd;
+            --bs-secondary: #6c757d;
+            --bs-success: #198754;
+            --bs-info: #0dcaf0;
+            --bs-warning: #ffc107;
+            --bs-danger: #dc3545;
+            --bs-light: #f8f9fa;
+            --bs-dark: #212529;
+            --bs-primary-rgb: 13,110,253;
+            --bs-secondary-rgb: 108,117,125;
+            --bs-success-rgb: 25,135,84;
+            --bs-info-rgb: 13,202,240;
+            --bs-warning-rgb: 255,193,7;
+            --bs-danger-rgb: 220,53,69;
+            --bs-light-rgb: 248,249,250;
+            --bs-dark-rgb: 33,37,41;
+            --bs-primary-text-emphasis: #052c65;
+            --bs-secondary-text-emphasis: #2b2f32;
+            --bs-success-text-emphasis: #0a3622;
+            --bs-info-text-emphasis: #055160;
+            --bs-warning-text-emphasis: #664d03;
+            --bs-danger-text-emphasis: #58151c;
+            --bs-light-text-emphasis: #495057;
+            --bs-dark-text-emphasis: #495057;
+            --bs-primary-bg-subtle: #cfe2ff;
+            --bs-secondary-bg-subtle: #e2e3e5;
+            --bs-success-bg-subtle: #d1e7dd;
+            --bs-info-bg-subtle: #cff4fc;
+            --bs-warning-bg-subtle: #fff3cd;
+            --bs-danger-bg-subtle: #f8d7da;
+            --bs-light-bg-subtle: #fcfcfd;
+            --bs-dark-bg-subtle: #ced4da;
+            --bs-primary-border-subtle: #9ec5fe;
+            --bs-secondary-border-subtle: #c4c8cb;
+            --bs-success-border-subtle: #a3cfbb;
+            --bs-info-border-subtle: #9eeaf9;
+            --bs-warning-border-subtle: #ffe69c;
+            --bs-danger-border-subtle: #f1aeb5;
+            --bs-light-border-subtle: #e9ecef;
+            --bs-dark-border-subtle: #adb5bd;
+            --bs-white-rgb: 255,255,255;
+            --bs-black-rgb: 0,0,0;
+            --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+            --bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+            --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+            --bs-body-font-family: var(--bs-font-sans-serif);
+            --bs-body-font-size: 1rem;
+            --bs-body-font-weight: 400;
+            --bs-body-line-height: 1.5;
+            --bs-body-color: #212529;
+            --bs-body-color-rgb: 33,37,41;
+            --bs-body-bg: #fff;
+            --bs-body-bg-rgb: 255,255,255;
+            --bs-emphasis-color: #000;
+            --bs-emphasis-color-rgb: 0,0,0;
+            --bs-secondary-color: rgba(33, 37, 41, 0.75);
+            --bs-secondary-color-rgb: 33,37,41;
+            --bs-secondary-bg: #e9ecef;
+            --bs-secondary-bg-rgb: 233,236,239;
+            --bs-tertiary-color: rgba(33, 37, 41, 0.5);
+            --bs-tertiary-color-rgb: 33,37,41;
+            --bs-tertiary-bg: #f8f9fa;
+            --bs-tertiary-bg-rgb: 248,249,250;
+            --bs-heading-color: inherit;
+            --bs-link-color: #0d6efd;
+            --bs-link-color-rgb: 13,110,253;
+            --bs-link-decoration: underline;
+            --bs-link-hover-color: #0a58ca;
+            --bs-link-hover-color-rgb: 10,88,202;
+            --bs-code-color: #d63384;
+            --bs-highlight-color: #212529;
+            --bs-highlight-bg: #fff3cd;
+            --bs-border-width: 1px;
+            --bs-border-style: solid;
+            --bs-border-color: #dee2e6;
+            --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+            --bs-border-radius: 0.375rem;
+            --bs-border-radius-sm: 0.25rem;
+            --bs-border-radius-lg: 0.5rem;
+            --bs-border-radius-xl: 1rem;
+            --bs-border-radius-xxl: 2rem;
+            --bs-border-radius-2xl: var(--bs-border-radius-xxl);
+            --bs-border-radius-pill: 50rem;
+            --bs-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+            --bs-box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+            --bs-box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+            --bs-box-shadow-inset: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+            --bs-focus-ring-width: 0.25rem;
+            --bs-focus-ring-opacity: 0.25;
+            --bs-focus-ring-color: rgba(13, 110, 253, 0.25);
+            --bs-form-valid-color: #198754;
+            --bs-form-valid-border-color: #198754;
+            --bs-form-invalid-color: #dc3545;
+            --bs-form-invalid-border-color: #dc3545;
+        }
+
+        [data-bs-theme=dark] {
+            color-scheme: dark;
+            --bs-body-color: #dee2e6;
+            --bs-body-color-rgb: 222,226,230;
+            --bs-body-bg: #212529;
+            --bs-body-bg-rgb: 33,37,41;
+            --bs-emphasis-color: #fff;
+            --bs-emphasis-color-rgb: 255,255,255;
+            --bs-secondary-color: rgba(222, 226, 230, 0.75);
+            --bs-secondary-color-rgb: 222,226,230;
+            --bs-secondary-bg: #343a40;
+            --bs-secondary-bg-rgb: 52,58,64;
+            --bs-tertiary-color: rgba(222, 226, 230, 0.5);
+            --bs-tertiary-color-rgb: 222,226,230;
+            --bs-tertiary-bg: #2b3035;
+            --bs-tertiary-bg-rgb: 43,48,53;
+            --bs-primary-text-emphasis: #6ea8fe;
+            --bs-secondary-text-emphasis: #a7acb1;
+            --bs-success-text-emphasis: #75b798;
+            --bs-info-text-emphasis: #6edff6;
+            --bs-warning-text-emphasis: #ffda6a;
+            --bs-danger-text-emphasis: #ea868f;
+            --bs-light-text-emphasis: #f8f9fa;
+            --bs-dark-text-emphasis: #dee2e6;
+            --bs-primary-bg-subtle: #031633;
+            --bs-secondary-bg-subtle: #161719;
+            --bs-success-bg-subtle: #051b11;
+            --bs-info-bg-subtle: #032830;
+            --bs-warning-bg-subtle: #332701;
+            --bs-danger-bg-subtle: #2c0b0e;
+            --bs-light-bg-subtle: #343a40;
+            --bs-dark-bg-subtle: #1a1d20;
+            --bs-primary-border-subtle: #084298;
+            --bs-secondary-border-subtle: #41464b;
+            --bs-success-border-subtle: #0f5132;
+            --bs-info-border-subtle: #087990;
+            --bs-warning-border-subtle: #997404;
+            --bs-danger-border-subtle: #842029;
+            --bs-light-border-subtle: #495057;
+            --bs-dark-border-subtle: #343a40;
+            --bs-heading-color: inherit;
+            --bs-link-color: #6ea8fe;
+            --bs-link-hover-color: #8bb9fe;
+            --bs-link-color-rgb: 110,168,254;
+            --bs-link-hover-color-rgb: 139,185,254;
+            --bs-code-color: #e685b5;
+            --bs-highlight-color: #dee2e6;
+            --bs-highlight-bg: #664d03;
+            --bs-border-color: #495057;
+            --bs-border-color-translucent: rgba(255, 255, 255, 0.15);
+            --bs-form-valid-color: #75b798;
+            --bs-form-valid-border-color: #75b798;
+            --bs-form-invalid-color: #ea868f;
+            --bs-form-invalid-border-color: #ea868f;
+        }
+
+        body {
+            margin: 0;
+            color: var(--bs-body-color);
+            background-color: var(--bs-body-bg);
+            -webkit-text-size-adjust: 100%;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1600 - 300)));
+        }
+        .layout {
+            max-width: 960px;
+        }
+        @media screen and (max-width: 425px) {
+            .layout {
+                width: 90% !important;
+            }
+        }
+        .description {
+            margin-top: 50px !important;
+            background: var(--bs-secondary-bg);
+            border-radius: 15px;
+            box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(0, 0, 0, 0.15);
+            border-bottom-color: rgba(0, 0, 0, 0.5);
+            border-bottom-width: 5px;
+        }
+        .lang-modal {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .lang-modal .link {
+            display: inline-block;
+            padding: 5px;
+        }
+        .fluid-heading {
+            font-size: 1.8rem;
+        }
+        @media screen and (max-width: 425px) {
+            .description img {
+                width: 100%;
+                float: none !important;
+                box-sizing: border-box;
+                display: block;
+                margin: 0 !important;
+            }
+        }
+        .language-list.show {
+            display: grid !important;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        @media screen and (max-width: 425px) {
+            .language-list.show {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        .topbar__heading {
+            margin-right: 1rem;
+            text-align: center;
+        }
+        @media screen and (max-width: 770px) {
+            .topbar {
+                flex-direction: column;
+            }
+            .topbar__heading {
+                margin-right: 0;
+            }
+        }
+        .change-lang {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: capitalize;
+            margin: 1rem;
+        }
+        .change-lang:hover {
+            text-decoration: none;
+        }
+        .change-lang .flag-icon {
+            margin-right: 5px;
+            transform: translateY(1px);
+        }
+
+        @media screen and (max-width: 1270px) {
+            .dropdown { position: static ;}
+        }
+        .topbar__heading {
+            width: 100%;
+            text-align: center;
+        }
+        .topbar .dropdown {
+            float: right;
+            min-width: max-content;
+        }
+        header .d-flex {
+            flex-direction: column;
+        }
+        @media all and (max-width: 540px) {
+            .fluid-heading {
+                font-size: 1.6rem;
+            }
+            body.mt-2 {
+                margin-top: 0 !important;
+            }
+            .layout.pt-5 {
+                padding-top: 15px !important;
+            }
+            .change-lang {
+                margin: 0 1rem;
+            }
+            header div p {
+                line-height: 1.2;
+                margin-top: 8px !important;
+                margin-bottom: 5px !important;
+            }
+            #runner.mb-5.pb-5 {
+                padding-bottom: 0 !important;
+                margin-bottom: 30px !important;
+            }
+        }
+        .main-menu {
+            width: 100%;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .main-menu .divider {
+            display: inline-block;
+            width: 10px;
+            position: relative;
+            height: 12px;
+            margin: 0 10px;
+        }
+
+        .main-menu .divider:after {
+            content: '';
+            display: block;
+            width: 10px;
+            height: 2px;
+            background-color: var(--bs-body-color);
+            position: absolute;
+            left: 0;
+            top: 5px;
+        }
+
+        .main-menu .divider.last:after {
+            background-color: transparent;
+        }
+
+        .main-menu a {
+            color: var(--bs-body-color);
+        }
+        .bd-placeholder-img {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 200px;
+        }
+
+        .bd-placeholder-img.mob {
+            height: 450px;
+        }
+
+        .card-text {
+            color: var(--bs-body-color);
+        }
+        .card {
+            margin-bottom: 15px;
+            background-color: var(--bs-body-bg);
+        }
+
+        @media all and (max-width: 540px) {
+            .bd-placeholder-img {
+                height: 150px;
+            }
+
+            .bd-placeholder-img.mob {
+                height: 320px;
+            }
+        }
+
+        @font-face {
+            font-family: 'Press Start';
+            src: url('../../mario-game/Fonts/pressstart2p-webfont.eot');
+            src: url('../../mario-game/Fonts/pressstart2p-webfont-1.eot') format('embedded-opentype'), url('../../mario-game/Fonts/pressstart2p-webfont.woff') format('woff'), url('../../mario-game/Fonts/pressstart2p-webfont.ttf') format('truetype'), url('../../mario-game/Fonts/pressstart2p-webfont.svg') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Super Plumber Bros';
+            src: url('../../mario-game/Fonts/super_plumber_brothers-webfont.eot');
+            src: url('../../mario-game/Fonts/super_plumber_brothers-webfont-1.eot') format('embedded-opentype'), url('../../mario-game/Fonts/super_plumber_brothers-webfont.woff') format('woff'), url('../../mario-game/Fonts/super_plumber_brothers-webfont.ttf') format('truetype'), url('../../mario-game/Fonts/super_plumber_brothers-webfont.svg') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        #game {
+            background-color: var(--bs-backdrop-bg);
+            display: block;
+            width: 100%;
+            max-width: 848px;
+            height: 509px;
+            position: relative;
+            margin: 20px auto 10px;
+            border: 2px solid var(--bs-backdrop-bg);
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        #game.mobilegame {
+            border: none;
+            max-width: 848px;
+            height: 528px;
+        }
+
+        body.fullscreen {
+            background-color: var(--bs-backdrop-bg);
+        }
+
+        body.fullscreen #main {
+            max-width: 100%;
+        }
+
+        body.fullscreen #game {
+            max-width: 100%;
+            height: 500px;
+            border: none;
+            position: static;
+            margin: 0;
+        }
+
+        body.fullscreen #out_editor {
+            position: static;
+        }
+
+        .bar1 .label.dark {
+            display: none;
+        }
+
+        [data-bs-theme=dark] .bar1 .label.light {
+            display: none;
+        }
+
+        [data-bs-theme=dark] .bar1 .label.dark {
+            display: block;
+        }
+
+        body.fullscreen #sound-toggle {
+            width: 200px;
+            position: static;
+            margin: 10px auto;
+        }
+
+        body.fullscreen #out_mapselect {
+            position: static;
+        }
+
+        body.fullscreen #go-back {
+            position: static;
+        }
+
+        body.fullscreen #go-back a {
+            color: var(--bs-body-color);
+            text-decoration: none;
+        }
+
+        #after {
+            margin: 0 0 26px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 21px;font-family: "Press Start";text-transform: uppercase;line-height: 117%;
+        }
+
+        .bar1 {
+            cursor: pointer;
+            margin: 10px;
+            text-align: center;
+        }
+
+        #out_editor {
+        }
+
+        #out_mapselect {
+            color: var(--bs-body-color);
+
+        }
+
+        #out_options {
+        }
+
+        #in_editor {
+            color: var(--bs-body-color);
+
+        }
+
+        #out_keymapping {
+            margin: 7px auto;
+        }
+
+        #in_options {
+        }
+
+        #sound-toggle {
+            color: var(--bs-body-color);
+
+        }
+
+        #sound-toggle:hover {
+            color: #a6ec5e;
+        }
+
+        .theme-switcher {
+            cursor: pointer;
+        }
+
+        .theme-block {
+            display: none;
+        }
+
+        .theme-block.dev {
+            display: block;
+        }
+
+
+        .theme-switcher .icon {
+            position: relative;
+            top: 4px;
+            height: 16px;
+            width: 16px;
+            display: inline-block;
+            margin-right: 5px;
+            background-size: 16px 16px;
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiB4PSIwIiB5PSIwIiB2aWV3Qm94PSIwIDAgNjQgNjQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPjxnIGRhdGEtbmFtZT0iMjUtZGF5IGFuZCBuaWdodCI+PHBhdGggZD0iTTYzLjcwNy4yOTNhMSAxIDAgMCAwLTEuNDE0IDBsLTYyIDYyYTEgMSAwIDEgMCAxLjQxNCAxLjQxNGw2Mi02MmExIDEgMCAwIDAgMC0xLjQxNHoiIGZpbGw9IiMwMDAwMDAiIG9wYWNpdHk9IjEiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSIiPjwvcGF0aD48Y2lyY2xlIGN4PSIxOCIgY3k9IjE4IiByPSI4IiBmaWxsPSIjMDAwMDAwIiBvcGFjaXR5PSIxIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iIj48L2NpcmNsZT48cGF0aCBkPSJtMTggMS0zIDZoNnpNMTIuMzQzIDguMSA1Ljk3OSA1Ljk3OWwyLjEyMiA2LjM2NHpNNyAxNWwtNiAzIDYgM3pNNS45NzkgMzAuMDIxbDYuMzY0LTIuMTIyLTQuMjQyLTQuMjQyek0xOCAzNWwzLTZoLTZ6TTIzLjY1NyAyNy44OTlsNi4zNjQgMi4xMjItMi4xMjItNi4zNjR6TTI5IDE1djZsNi0zek0zMC4wMjEgNS45NzkgMjMuNjU3IDguMWw0LjI0MiA0LjI0M3pNNTIuMjIxIDM0Ljc3OUExMS45NzQgMTEuOTc0IDAgMCAxIDM2Ljc4IDUwLjIyIDExLjk5MyAxMS45OTMgMCAxIDAgNTIuMjIgMzQuNzh6TTQxIDQ0YTcuMjcyIDcuMjcyIDAgMCAxIDUtNSA3LjI3MiA3LjI3MiAwIDAgMS01LTUgNy4yNzIgNy4yNzIgMCAwIDEtNSA1IDcuMjcyIDcuMjcyIDAgMCAxIDUgNXoiIGZpbGw9IiMwMDAwMDAiIG9wYWNpdHk9IjEiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSIiPjwvcGF0aD48Y2lyY2xlIGN4PSI0OSIgY3k9IjI4IiByPSIyIiBmaWxsPSIjMDAwMDAwIiBvcGFjaXR5PSIxIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iIj48L2NpcmNsZT48Y2lyY2xlIGN4PSIyOCIgY3k9IjU0IiByPSIyIiBmaWxsPSIjMDAwMDAwIiBvcGFjaXR5PSIxIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBjbGFzcz0iIj48L2NpcmNsZT48L2c+PC9nPjwvc3ZnPg");
+        }
+
+        [data-bs-theme=dark] .theme-switcher .icon {
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiB4PSIwIiB5PSIwIiB2aWV3Qm94PSIwIDAgNjQgNjQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPjxnIGRhdGEtbmFtZT0iMjUtZGF5IGFuZCBuaWdodCI+PHBhdGggZD0iTTYzLjcwNy4yOTNhMSAxIDAgMCAwLTEuNDE0IDBsLTYyIDYyYTEgMSAwIDEgMCAxLjQxNCAxLjQxNGw2Mi02MmExIDEgMCAwIDAgMC0xLjQxNHoiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjEiIGRhdGEtb3JpZ2luYWw9IiNmZmZmZmYiIGNsYXNzPSIiPjwvcGF0aD48Y2lyY2xlIGN4PSIxOCIgY3k9IjE4IiByPSI4IiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIxIiBkYXRhLW9yaWdpbmFsPSIjZmZmZmZmIiBjbGFzcz0iIj48L2NpcmNsZT48cGF0aCBkPSJtMTggMS0zIDZoNnpNMTIuMzQzIDguMSA1Ljk3OSA1Ljk3OWwyLjEyMiA2LjM2NHpNNyAxNWwtNiAzIDYgM3pNNS45NzkgMzAuMDIxbDYuMzY0LTIuMTIyLTQuMjQyLTQuMjQyek0xOCAzNWwzLTZoLTZ6TTIzLjY1NyAyNy44OTlsNi4zNjQgMi4xMjItMi4xMjItNi4zNjR6TTI5IDE1djZsNi0zek0zMC4wMjEgNS45NzkgMjMuNjU3IDguMWw0LjI0MiA0LjI0M3pNNTIuMjIxIDM0Ljc3OUExMS45NzQgMTEuOTc0IDAgMCAxIDM2Ljc4IDUwLjIyIDExLjk5MyAxMS45OTMgMCAxIDAgNTIuMjIgMzQuNzh6TTQxIDQ0YTcuMjcyIDcuMjcyIDAgMCAxIDUtNSA3LjI3MiA3LjI3MiAwIDAgMS01LTUgNy4yNzIgNy4yNzIgMCAwIDEtNSA1IDcuMjcyIDcuMjcyIDAgMCAxIDUgNXoiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9IjEiIGRhdGEtb3JpZ2luYWw9IiNmZmZmZmYiIGNsYXNzPSIiPjwvcGF0aD48Y2lyY2xlIGN4PSI0OSIgY3k9IjI4IiByPSIyIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIxIiBkYXRhLW9yaWdpbmFsPSIjZmZmZmZmIiBjbGFzcz0iIj48L2NpcmNsZT48Y2lyY2xlIGN4PSIyOCIgY3k9IjU0IiByPSIyIiBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIxIiBkYXRhLW9yaWdpbmFsPSIjZmZmZmZmIiBjbGFzcz0iIj48L2NpcmNsZT48L2c+PC9nPjwvc3ZnPg");
+        }
+
+        #full-screen a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        #full-screen a:hover {
+            color: #a6ec5e;
+        }
+
+        #in_keymapping:hover {
+            height: 400px;
+        }
+
+        #in_keymapping input {
+            width: 80px;
+            margin-right: 20px;
+            float: right;
+            font-family: "Press Start";
+            text-transform: uppercase;
+        }
+
+        #in_keymapping input:focus {
+            background-color: #0099ff;
+        }
+
+        .expander {
+            padding: 7px;
+            width: 280px;
+            height: 24px;
+            display: none;
+            z-index: 98;
+            background: #009966;
+            border: 3px solid #99ffcc;
+            border-radius: 7px;
+            box-shadow: 0 3px 7px black inset;
+            font-size: 14px;
+            margin: 0 10px;
+            position: absolute;
+        }
+
+        .bar1:hover .expander {
+            margin-top: -294px;
+            height: 280px;
+            display: block;
+        }
+
+        .bar1 div.label {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .maprectout {
+            margin: 1px 3px;
+            display: inline-block;
+            background: #ffcc33;
+            border: 3px outset;
+            cursor: pointer;
+            color: black;
+            font-size: 14px;
+        }
+
+        .maprect {
+            width: 49px;
+            height: 20px;
+        }
+
+        .maprect.off {
+            background: #996600;
+        }
+
+        .maprect.big {
+            width: 231px;
+        }
+
+        .maprect.larger {
+            margin: 14px 0;
+        }
+
+        .maprect.giant {
+            padding: 28px 0 70px 0;
+            font-size: 17px;
+            line-height: 210%;
+        }
+        @media (max-width: 599px) {
+            body.fullscreen .bar1 div.label {
+                font-size: 13px;
+            }
+        }
+
+        @media (max-width: 479px) {
+            body.fullscreen .bar1 div.label {
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 359px) {
+            body.fullscreen .bar1 div.label {
+                font-size: 11px;
+            }
+        }
+
+        .logo {
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 479px) {
+            .logo {
+                max-width: 120%;
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+<script async="" src="gtag/js?id=G-8JV3QJT7DE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8JV3QJT7DE');
+</script>    <title>Historia del juego Super Mario Bros</title>
+    <meta name="description" content="Juega al juego original Super Mario Bros online. Compatible con todos los navegadores y dispositivos móviles.">
+    </head>
+    <body class="mt-2">
+<div class="w-100 justify-content-center">
+    <div class="layout container w-75 pt-5" itemscope="" itemtype="https://schema.org/Game">
+    <header>
+        <div>
+            <div class="d-flex align-items-center topbar">
+                <p>Super Mario Bros Online</p>
+                <!--h1 class="mb-2 fluid-heading topbar__heading">
+                    Super Mario Brothers                </h1-->
+            </div>
+            
+            <nav class="main-menu"><br>
+    <a href="/es/">Hogar</a>
+    <span class="divider"></span>
+    <a href="/es/gameplay/">Vista de juego</a>
+    <span class="divider"></span>
+    <b>Historia del juego</b>
+    <span class="divider"></span>
+    <a href="/es/media/">Fotos</a>
+    <span class="divider"></span>
+    <a href="/es/contact/">Contacto</a>
+                <span class="divider last"></span>
+                <span class="theme-switch">
+        <a class="theme-switcher" onclick="switchTheme()"><span class="icon"></span></a>
+   </span>
+</nav>
+        </div>
+    </header>
+    <main>
+    <article class="description">
+        <meta itemprop="language" itemtype="https://schema.org/Language" data-lang="es">
+  <h1 class="mb-2 fluid-heading topbar__heading">
+                    Historia                </h1>
+        <section class="p-4">    
+           <div class="text-justify">
+               <script async="" src="pagead/js/f-1.txt?client=ca-pub-5363384967385648" crossorigin="anonymous"></script>
+<!-- supermario_adaptiv_gorizont -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5363384967385648" data-ad-slot="1025721105" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+                <img class="m-3" src="../../static/images/gp1-2.jpg" style="float: right">
+                <div>
+                    <p>Pocos videojuegos pueden presumir de haber permanecido en la memoria colectiva durante tantas décadas y de haber conquistado a distintas generaciones. Entre ellos, <b>Super Mario</b> (<a href="https://es.wikipedia.org/wiki/Super_Mario_Bros." target="_blank">&#128270; wiki</a>) ocupa un lugar único, siendo uno de los títulos más icónicos y reconocidos de la historia.</p> <p>Hoy en día, prácticamente no existe nadie en el mundo que no haya escuchado hablar del famoso fontanero italiano con su inconfundible <b>mono de trabajo rojo</b>, <b>gorra</b> y <b>bigote</b>. Incluso quienes nunca han jugado, al menos conocen su nombre o han visto su imagen en algún lugar. Sin embargo, pocos recuerdan que Mario no siempre fue el protagonista, ni siquiera un fontanero… y ni siquiera se llamaba Mario.</p> <p>Su primera aparición ocurrió en <b>1981</b> en el mítico juego arcade <b>Donkey Kong</b>. En aquel entonces, el personaje se llamaba <b>Jumpman</b> y no era fontanero, sino <b>carpintero</b>. Su objetivo: rescatar a su novia <b>Pauline</b> de las garras de un enorme gorila que lanzaba barriles, marcando así el nacimiento de lo que sería una de las sagas más exitosas de la industria.</p> <center> <iframe width="640" height="360" src="https://www.youtube.com/embed/Pp2aMs38ERY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe> </center> <p>Desde aquel humilde comienzo, Mario ha recorrido un largo camino. En las últimas tres décadas, ha protagonizado más de <b>200 videojuegos</b> y ha hecho apariciones especiales en cientos de títulos adicionales. Cada entrega ha contribuido a consolidar su legado como uno de los personajes más queridos de la cultura pop.</p> <p>Para la llegada de los <b>años 90</b>, Mario ya era una auténtica leyenda. No solo se convirtió en el héroe que siempre lograba salvar a la princesa, sino que también se transformó en el rostro principal de <b>Nintendo</b>, representando la esencia de la compañía y revolucionando para siempre el mundo de los videojuegos.</p>
+                    <h2>El comienzo de Nintendo</h2>
+                    <p><strong>1889</strong> fue el año en que todo comenzó. Fusajiro Yamauchi fundó una pequeña empresa llamada <b>Nintendo Koppai</b> (<a href="https://es.wikipedia.org/wiki/Nintendo" target="_blank">&#128270; wiki</a>), dedicada a fabricar cartas japonesas de juego conocidas como <i>hanafuda</i>. El negocio prosperó durante muchas décadas, consolidándose como uno de los principales productores de <i>hanafuda</i> en todo el mundo.</p> <p>En <strong>1956</strong>, cuando <b>Hiroshi Yamauchi</b>, nieto del fundador, asumió la dirección, decidió diversificar las fuentes de ingresos de la compañía. Durante esta etapa, Nintendo invirtió en diferentes negocios, algunos tan inesperados como <i>“hoteles del amor”</i> para parejas, paquetes de arroz e incluso una empresa de taxis. Sin embargo, ninguna de estas ideas tuvo un gran éxito.</p> <p>Fue en los años <strong>60</strong> cuando Nintendo encontró un nuevo nicho: el mercado de los <b>juguetes electrónicos</b>. Inspirado por el creciente éxito de Atari, Hiroshi Yamauchi decidió que la compañía debía entrar de lleno en la industria de los videojuegos.</p> <p><strong>En 1977, Nintendo presentó su primera consola de videojuegos en color</strong>. Venía precargada con distintas versiones de un juego inspirado en <i>Pong</i>, y en apenas tres años logró vender más de <b>3 millones de unidades</b>.</p> <p>Pero Yamauchi no se conformó y apostó por el mercado de los <b>juegos arcade</b>. La compañía fabricó 3.000 cabinas del videojuego <i>Radar Scope</i> para distribuirlas en Estados Unidos. Sin embargo, el título no tuvo la aceptación esperada: los vendedores estadounidenses lo consideraban demasiado similar a <i>Space Invaders</i> y, además, sus sonidos poco atractivos desanimaban a los jugadores. Nintendo terminó con un gran stock sin vender y la expansión en EE. UU. parecía estar en riesgo.</p> <p>Este contratiempo inspiró a Yamauchi a probar una nueva estrategia. Encargó al joven artista y diseñador <b>Shigeru Miyamoto</b> la creación de un juego que pudiera conquistar el mercado americano. Miyamoto se enfocó en la narrativa y, tomando inspiración del cómic <i>Popeye</i>, creó a <b>Jumpman</b>, un personaje que debía rescatar a su novia <b>Pauline</b> de un enorme gorila secuestrador llamado <b>Donkey Kong</b>. El juego fue un éxito rotundo y supuso el nacimiento de quien, poco después, sería conocido mundialmente como <b>Mario</b>.</p> <p><strong>En 1983, Mario se convirtió finalmente en la estrella de su propio juego</strong>. Junto a su hermano <b>Luigi</b>, ambos ahora caracterizados como fontaneros de Nueva York, protagonizó el clásico arcade <i>Mario Bros.</i>, donde debían enfrentarse a diferentes criaturas que emergían de las alcantarillas.</p> <p><strong>El gran salto llegó cuando Nintendo y Mario pasaron de los recreativos a los hogares</strong>. Esto ocurrió con el lanzamiento de la <b>Family Computer</b> en Japón. Su éxito fue inmediato, y tras un año de pruebas en determinados mercados de Estados Unidos, la consola llegó oficialmente al país bajo el nombre de <b>Nintendo Entertainment System</b> (<b>NES</b>) en <strong>septiembre de 1986</strong>. La consola se lanzó con más de una docena de títulos, incluyendo uno que marcaría la historia de los videojuegos para siempre: <b>Super Mario Bros.</b></p>
+<center><iframe width="640" height="360" src="https://www.youtube.com/embed/Iq1Y2zKV-P4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></center>
+
+                    <h2>La evolución de Mario</h2>
+                    <p>Aunque es imposible enumerar todos los juegos en los que ha participado <b>Mario</b>, a continuación destacamos algunos de los títulos más importantes que marcaron verdaderos <b>hitos en la historia</b> de los videojuegos.</p>  
+
+<ol>
+    <li><strong>Donkey Kong (Arcade) - 1981</strong></li>
+    <p>En aquel entonces, nadie imaginaba que "<b>Jumpman</b>" pasaría de ser un personaje secundario a convertirse en el <b>icono más reconocido de la historia de los videojuegos</b>. En su primera aparición, la mayor parte de su diseño característico ya estaba presente, incluyendo su famoso <b>sombrero rojo</b>, el <b>mono de trabajo</b> y el <b>inconfundible bigote italiano</b>.</p>
+    
+    <li><strong>Donkey Kong (Game & Watch) - 1982</strong></li>
+    <p>Este fue el segundo título en el que apareció Mario. En esta versión para <b>Game & Watch</b>, el fondo de la pantalla era fijo y el jugador debía guiar a Mario desde la parte inferior hasta la superior. Aunque era reconocible, las <b>limitaciones técnicas</b> del sistema hacían que su diseño fuera más simple.</p>
+    
+    <li><strong>Mario Bros. (Arcade) - 1983</strong></li>
+    <p>Este título marcó un <b>antes y un después</b>, ya que fue el <b>primer juego protagonizado por Mario</b>. Además, introdujo por primera vez a su hermano <b>Luigi</b>. Los cambios en el diseño de Mario fueron mínimos, aunque su <b>nariz</b> era ligeramente menos prominente que en títulos posteriores.</p>
+    
+    <li><strong>Mario is Missing! (Super NES) - 1992</strong></li>
+    <p>Como sugiere el título, Mario <b>no aparece</b> en este juego educativo. En su lugar, el protagonista es <b>Luigi</b>, quien emprende la aventura para rescatarlo. Sus gráficos eran muy similares a los de <b>Super Mario World</b>.</p>
+    
+    <li><strong>Mario's Tennis (Virtual Boy) - 1995</strong></li>
+    <p>Disponible durante menos de <b>seis meses</b> en Norteamérica, este título se incluyó en el paquete de lanzamiento del <b>Virtual Boy</b>. Mario fue el protagonista de <b>4 de los 22 juegos</b> lanzados para esta consola, convirtiendo a este título en uno de los más reconocidos de la plataforma.</p>
+    
+    <li><strong>Mario Kart: Double Dash (GameCube) - 2003</strong></li>
+    <p>Después de casi <b>una década</b> sin nuevas entregas en consola, este título revolucionó la saga <b>Mario Kart</b>. Su mayor innovación fue permitir que <b>dos jugadores</b> compartieran un mismo kart: uno conducía mientras el otro se encargaba de los ítems. Además, los personajes podían intercambiar roles en cualquier momento, aportando un nuevo nivel de estrategia.</p>
+    
+    <li><strong>Mario Kart Wii (Wii) - 2008</strong></li>
+    <p>Con el lanzamiento de la <b>Wii</b>, Nintendo llevó <b>Mario Kart</b> a otro nivel. El juego incluía un <b>volante físico</b> que ofrecía una experiencia de conducción más realista. Además, introdujo <b>funciones online</b>, permitiendo competir con jugadores de todo el mundo.</p>
+    
+    <li><strong>Super Mario 3D Land (Nintendo 3DS) - 2011</strong></li>
+    <p>Una propuesta innovadora que combinaba elementos de <b>plataformas 2D</b> y <b>entornos 3D</b>. Incluía mecánicas clásicas, como la icónica <b>hoja de poder</b>, y se convirtió rápidamente en el <b>juego portátil de Mario más vendido de la historia</b>.</p>
+    
+    <li><strong>Mario Tennis Open (Nintendo 3DS) - 2012</strong></li>
+    <p>Este título de t
+ </ol>                    </div>
+             <center> <iframe width="640" height="360" src="https://www.youtube.com/embed/OTe6adS5cf4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></center>
+              </div>
+              <br>
+<center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : '6ee04ee6748246c924e5ba02bf6c7d24',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="../6ee04ee6748246c924e5ba02bf6c7d24/invoke.js"></script>
+</center>
+              <img class="m-3" src="../../static/images/gp3.jpg" style="float: right">
+              <h3>Continuación de la evolución</h3>
+            <p><b>Mario</b> ha recorrido un largo camino desde que hizo su primera aparición en el mundo de los videojuegos, pero su <b>aspecto icónico</b> prácticamente no ha cambiado en las últimas dos décadas. A lo largo de los años, Mario se ha expandido hacia múltiples géneros, incluyendo <b>juegos de deportes</b>, <b>RPGs</b>, <b>juegos de fiesta</b> y muchos más, pero sigue siendo reconocido principalmente por sus <b>clásicos juegos de plataformas</b>.</p>  
+
+<p>Hay una razón por la que <b>Super Mario</b> es la <b>franquicia de videojuegos más vendida de la historia</b>. Aunque no todos los títulos en los que ha participado se han convertido en clásicos, la mayoría ha recibido <b>excelentes críticas</b> y la saga ha tenido <b>muchos más éxitos que fracasos</b>, consolidando a Mario como una de las figuras más importantes en la industria del gaming.</p>
+        </section>
+          <br>
+              <script async="" src="pagead/js/f-1.txt?client=ca-pub-5363384967385648" crossorigin="anonymous"></script>
+<!-- supermario_adaptiv_kvadrat -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5363384967385648" data-ad-slot="4498100247" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+    </article>
+
+              <br>
+<center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : '6ee04ee6748246c924e5ba02bf6c7d24',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="../6ee04ee6748246c924e5ba02bf6c7d24/invoke.js"></script>
+</center>
+</main>
+
+<footer>
+    <div class="mt-5 mb-3 d-flex align-items-center justify-content-between">
+        <div>&copy; 2025 - Super Mario Bros Online.</div>
+        <div>
+
+            <div class="dropdown">
+    <a class="change-lang" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+        <span class="flag-icon flag-icon-es"></span>
+        <span>language</span>
+    </a>
+    <div class="dropdown-menu language-list" aria-labelledby="dropdownMenuButton">
+            
+    <a class="link dropdown-item " href="../../de/history/" itemprop="availableLanguage" itemscope="" itemtype="http://schema.org/Language">
+        <span class="flag-icon flag-icon-de "></span>
+        <span itemprop="name"> Deutsche </span>
+    </a>
+      
+          
+    <a class="link dropdown-item " href="../../el/history/" itemprop="availableLanguage" itemscope="" itemtype="http://schema.org/Language">
+        <span class="flag-icon flag-icon-gr "></span>
+        <span itemprop="name"> Ελληνικά </span>
+    </a>
+      
+          
+    <a class="link dropdown-item " href="/history/" itemprop="availableLanguage" itemscope="" itemtype="http://schema.org/Language">
+        <span class="flag-icon flag-icon-us "></span>
+        <span itemprop="name"> English </span>
+    </a>
+      
+          
+    <a class="link dropdown-item active" href="/es/history/" itemprop="availableLanguage" itemscope="" itemtype="http://schema.org/Language">
+        <span class="flag-icon flag-icon-es "></span>
+        <span itemprop="name"> Español </span>
+    </a>
+      
+          
+    <a class="link dropdown-item " href="../../fr/history/" itemprop="availableLanguage" itemscope="" itemtype="http://schema.org/Language">
+        <span class="flag-icon flag-icon-fr "></span>
+        <span itemprop="name"> Français </span>
+    </a>
+      
+          
+    <a class="link dropdown-item " href="../../it/history/" itemprop="availableLanguage" itemscope="" itemtype="http://schema.org/Language">
+        <span class="flag-icon flag-icon-it "></span>
+        <span itemprop="name"> Italiano </span>
+    </a>
+      
+          
+    <a class="link dropdown-item " href="../../nl/history/" itemprop="availableLanguage" itemscope="" itemtype="http://schema.org/Language">
+        <span class="flag-icon flag-icon-nl "></span>
+        <span itemprop="name"> Nederlands </span>
+    </a>
+      
+          
+    <a class="link dropdown-item " href="../../pl/history/" itemprop="availableLanguage" itemscope="" itemtype="http://schema.org/Language">
+        <span class="flag-icon flag-icon-pl "></span>
+        <span itemprop="name"> Polski </span>
+    </a>
+      
+          
+    <a class="link dropdown-item " href="../../pt/history/" itemprop="availableLanguage" itemscope="" itemtype="http://schema.org/Language">
+        <span class="flag-icon flag-icon-br "></span>
+        <span itemprop="name"> Português </span>
+    </a>
+      
+          
+    <a class="link dropdown-item " href="../../ru/history/" itemprop="availableLanguage" itemscope="" itemtype="http://schema.org/Language">
+        <span class="flag-icon flag-icon-ru "></span>
+        <span itemprop="name"> Русский </span>
+    </a>
+      
+          
+    <a class="link dropdown-item " href="../../tr/history/" itemprop="availableLanguage" itemscope="" itemtype="http://schema.org/Language">
+        <span class="flag-icon flag-icon-tr "></span>
+        <span itemprop="name"> Türkçe </span>
+    </a>
+      
+          
+    <a class="link dropdown-item " href="../../vi/history/" itemprop="availableLanguage" itemscope="" itemtype="http://schema.org/Language">
+        <span class="flag-icon flag-icon-vn "></span>
+        <span itemprop="name"> Tiếng Việt </span>
+    </a>
+      
+          </div>
+</div>
+        </div>
+    </div>
+
+    <br>
+
+</footer>
+</div>
+</div>
+<script>
+    function switchTheme() {
+        let body = document.querySelector('html');
+
+        if (body.getAttribute('data-bs-theme') === 'dark') {
+            body.setAttribute('data-bs-theme', 'light');
+            localStorage.setItem('theme', 'light')
+        } else {
+            body.setAttribute('data-bs-theme', 'dark');
+            localStorage.setItem('theme', 'dark')
+        }
+    }
+</script>
+<script src="../../mario-game/assets/jquery.min.js"></script>
+<script src="../../mario-game/ui.js"></script>
+<script>
+    // document.onload()
+    let machineEvent = new Event('click', {bubbles:true})
+    document.body.dispatchEvent(machineEvent);
+    document.body.addEventListener(
+        "keydown",
+        function(event) {
+            if (event.keyCode === 32 && event.target === document.body) {
+                event.preventDefault();
+            }
+        },
+        false
+    );
+</script>
+
+<script>
+    (() => {
+        'use strict'
+
+        const getStoredTheme = () => localStorage.getItem('theme')
+        const setStoredTheme = theme => localStorage.setItem('theme', theme)
+
+        const getPreferredTheme = () => {
+            const storedTheme = getStoredTheme()
+            if (storedTheme) {
+                return storedTheme
+            }
+
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+        }
+
+        const setTheme = theme => {
+            if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                document.documentElement.setAttribute('data-bs-theme', 'dark');
+            } else {
+                document.documentElement.setAttribute('data-bs-theme', theme)
+            }
+        }
+
+        setTheme(getPreferredTheme())
+
+        const showActiveTheme = (theme, focus = false) => {
+            const themeSwitcher = document.querySelector('#bd-theme')
+
+            if (!themeSwitcher) {
+                return
+            }
+
+            const themeSwitcherText = document.querySelector('#bd-theme-text')
+            const activeThemeIcon = document.querySelector('.theme-icon-active use')
+            const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
+            const svgOfActiveBtn = btnToActive.querySelector('svg use').getAttribute('href')
+
+            document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+                element.classList.remove('active')
+                element.setAttribute('aria-pressed', 'false')
+            })
+
+            btnToActive.classList.add('active')
+            btnToActive.setAttribute('aria-pressed', 'true')
+            activeThemeIcon.setAttribute('href', svgOfActiveBtn)
+            const themeSwitcherLabel = `${themeSwitcherText.textContent} (${btnToActive.dataset.bsThemeValue})`
+            themeSwitcher.setAttribute('aria-label', themeSwitcherLabel)
+
+            if (focus) {
+                themeSwitcher.focus()
+            }
+        }
+
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+            const storedTheme = getStoredTheme()
+            if (storedTheme !== 'light' && storedTheme !== 'dark') {
+                setTheme(getPreferredTheme())
+            }
+        })
+
+        window.addEventListener('DOMContentLoaded', () => {
+            showActiveTheme(getPreferredTheme())
+
+            document.querySelectorAll('[data-bs-theme-value]')
+                .forEach(toggle => {
+                    toggle.addEventListener('click', () => {
+                        const theme = toggle.getAttribute('data-bs-theme-value')
+                        setStoredTheme(theme)
+                        setTheme(theme)
+                        showActiveTheme(theme, true)
+                    })
+                })
+        })
+    })()
+</script>
+</body>
+</html>
