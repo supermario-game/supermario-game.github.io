@@ -1072,6 +1072,99 @@
         })
     })()
 </script>
+		
+<script>
+(function () {
+    function detectAdBlock(callback) {
+        const bait = document.createElement('div');
+
+        bait.className = 'adsbox ad-banner ad-unit adsbygoogle';
+        bait.setAttribute('aria-hidden', 'true');
+
+        bait.style.cssText = `
+            position:absolute !important;
+            left:-10000px !important;
+            top:-10000px !important;
+            width:300px !important;
+            height:250px !important;
+            pointer-events:none !important;
+        `;
+
+        document.body.appendChild(bait);
+
+        setTimeout(function () {
+            const blocked =
+                bait.offsetHeight === 0 ||
+                bait.offsetWidth === 0 ||
+                bait.clientHeight === 0 ||
+                bait.clientWidth === 0 ||
+                getComputedStyle(bait).display === 'none' ||
+                getComputedStyle(bait).visibility === 'hidden';
+
+            bait.remove();
+
+            callback(blocked);
+        }, 100);
+    }
+
+    function showAdBlockMessage() {
+        const overlay = document.createElement('div');
+
+        overlay.innerHTML = `
+            <div style="
+                max-width:500px;
+                padding:30px;
+                background:#fff;
+                color:#222;
+                border-radius:12px;
+                text-align:center;
+                font-family:Arial,sans-serif;
+                box-shadow:0 10px 40px rgba(0,0,0,.3);
+            ">
+                <h2>Ad Blocker Detected</h2>
+                <p>
+                    It looks like an ad blocker is enabled.
+                    Please disable it for this website and reload the page.
+                </p>
+                <button onclick="location.reload()" style="
+                    padding:10px 20px;
+                    border:0;
+                    border-radius:6px;
+                    cursor:pointer;
+                ">
+                    Reload Page
+                </button>
+            </div>
+        `;
+
+        overlay.style.cssText = `
+            position:fixed;
+            inset:0;
+            z-index:2147483647;
+            background:rgba(0,0,0,.75);
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        `;
+
+        document.body.appendChild(overlay);
+    }
+
+    function runAdBlockCheck() {
+        detectAdBlock(function (blocked) {
+            if (blocked) {
+                showAdBlockMessage();
+            }
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', runAdBlockCheck);
+    } else {
+        runAdBlockCheck();
+    }
+})();
+</script>
 </body>
 </html>
 
